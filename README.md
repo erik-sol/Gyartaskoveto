@@ -56,7 +56,7 @@ Lásd: `requirements.txt`
 
 ## Megjegyzés
 
-Ez a projekt egy alap Python kurzus keretein belül készült, ugyanakkor valós ipari igény alapján lett kialakítva, egy gépipari gyártócég működését modellezve. Bár még fejlesztés alatt áll, a funkciók már most is lehetővé teszik az alkatrészkövetés alapvető adminisztrációját.
+Ez a projekt egy alap Python kurzus keretein belül készült, ugyanakkor valós ipari igény alapján lett kialakítva, egy fémipari gyártócég működését modellezve. Bár még fejlesztés alatt áll, a funkciók már most is lehetővé teszik az alkatrészkövetés alapvető adminisztrációját.
 
 ---
 
