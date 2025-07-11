@@ -1,0 +1,35 @@
+Gyartaskoveto/
+│
+├── main.py                      # Belépési pont (applikáció indítása)
+│
+├── models/                      # ORM osztályok (SQLAlchemy modellek)
+│   ├── __init__.py              # Modellek importálása egy helyről
+│   ├── base.py                  # Base = declarative_base() itt van
+│   ├── felhasznalo.py           # Jogosultsag, Felhasznalo
+│   ├── projekt.py               # Projekt, ProjektAlkatresz
+│   ├── alkatresz.py             # Alkatresz, Feladat
+│
+├── database/
+│   ├── __init__.py
+│   ├── connection.py            # SQLite kapcsolat beállítása, engine, session
+│   └── create_db.py             # Adatbázis inicializálás (pl. Base.metadata.create_all)
+│
+├── gui/
+│   ├── __init__.py
+│   ├── main_window.py           # Tkinter főablak
+│   └── views/                   # GUI komponensek külön
+│       ├── login_view.py        # Bejelentkezési ablak (felh, jelszo)
+│       ├── prod_view.py         # Gyártási nézet (operátori alkatrész jelentés)
+│       ├── project_view.py      # Projektek felvitele, kezelése
+│       ├── summary_view.py      # Alkatrész összesítő nézet (melyik hogy áll elkészültségben)
+│       ├── task_view.py         # Feladat nézet (technológus összegezheti a feladatokat)
+│       ├── user_view.py         # Felhasználók (hozzáadás, módosítás, törlés, jogosultságok kezelése)
+│       └── part_view.py         # Alkatrész nézet (alkatrészek felvitele, módosítása, törlése stb.)
+│
+├── services/                    # Üzleti logika (auth, projektek kezelése stb.)
+│   ├── __init__.py
+│   ├── auth_service.py          # Felhasználó beléptetés stb.
+│   └── project_service.py       # Projekt-specifikus műveletek
+│
+├── config.py                    # Konfigurációs beállítások (pl. adatbázisútvonal)
+└── requirements.txt             # Függőségek (SQLAlchemy, tkinter stb.)
